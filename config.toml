@@ -1,0 +1,7 @@
+baseurl = "https://weirdtrickmafia.fm/"
+languageCode = "en-us"
+title = "weirdtrickmafia.fm"
+canonifyUrls = true
+
+[params]
+	description = "A podcast with Andrew Clay Shafer and Jessie Frazelle."
