@@ -1,3 +1,3 @@
-# lkml.wtf
+# weirdtrickmafia.fm
 
-Source code for [lkml.wtf](https://lkml.wtf).
+Source code for [weirdtrickmafia.fm](https://weirdtrickmafia.fm).
