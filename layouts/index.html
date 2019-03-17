@@ -2,24 +2,30 @@
 
 <div class="container">
     <p class="lead">
-	<a class="btn btn-default btn-sm" role="button" href="{{ .Site.Params.google_play_podcast_url }}">
-            <i class="fab fa-google-play"></i> Google Play
-        </a>
-		<a class="btn btn-default btn-sm" role="button" href="{{ .Site.Params.itunes_podcast_url }}">
-            <i class="fab fa-itunes-note"></i> iTunes
-        </a>
-		<a class="btn btn-default btn-sm" role="button" href="{{ .Site.Params.stitcher_podcast_url }}">
-            <i class="fa fa-podcast"></i> Stitcher
-        </a>
-		<a class="btn btn-default btn-sm" role="button" href="{{ .Site.Params.youtube_url }}">
-            <i class="fab fa-youtube"></i> Subscribe
-        </a>
-		<a class="btn btn-default btn-sm" role="button" href="https://twitter.com/{{ .Site.Params.twitter_handle }}">
-            <i class="fab fa-twitter"></i> Follow
-        </a>
-		<a class="btn btn-default btn-sm" role="button" href="/post/index.xml">
-            <i class="fa fa-rss"></i> RSS Feed
-        </a>
+    {{ with .Site.Params.google_play_podcast_url }}
+    <a class="btn btn-default btn-sm" role="button" href="{{ . }}">
+        <i class="fab fa-google-play"></i> Google Play
+    </a>
+    {{ end }}
+    {{ with .Site.Params.itunes_podcast_url }}
+    <a class="btn btn-default btn-sm" role="button" href="{{ . }}">
+        <i class="fab fa-itunes-note"></i> iTunes
+    </a>
+    {{ end }}
+    {{ with .Site.Params.stitcher_podcast_url }}
+    <a class="btn btn-default btn-sm" role="button" href="{{ . }}">
+        <i class="fa fa-podcast"></i> Stitcher
+    </a>
+    {{ end }}
+    <a class="btn btn-default btn-sm" role="button" href="{{ .Site.Params.youtube_url }}">
+        <i class="fab fa-youtube"></i> Subscribe
+    </a>
+    <a class="btn btn-default btn-sm" role="button" href="https://twitter.com/{{ .Site.Params.twitter_handle }}">
+        <i class="fab fa-twitter"></i> Follow
+    </a>
+    <a class="btn btn-default btn-sm" role="button" href="/post/index.xml">
+        <i class="fa fa-rss"></i> RSS Feed
+    </a>
     </p>
     {{ range .Data.Pages.ByDate.Reverse }}
     <article>
