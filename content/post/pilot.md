@@ -3,6 +3,7 @@ date = "2019-03-09T11:25:24-04:00"
 title = "Pilot"
 description = "Unofficial pilot episode from Arrested Devops."
 hosts = ["littleidea", "jessfraz"]
+episode = 0
 +++
 
 
