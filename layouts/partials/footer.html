@@ -4,22 +4,22 @@
         <div>
             <small class="text-muted pull-left">&copy; weirdtrickmafia.fm {{ now.Format "2006" }}</small>
             <div class="text-right">
-                <a class="icon" href="">
+				<a class="icon" href="{{ .Site.Params.google_play_podcast_url }}">
                     <i class="fab fa-google-play"></i>
                 </a>
-                <a class="icon" href="">
+				<a class="icon" href="{{ .Site.Params.itunes_podcast_url }}">
                     <i class="fab fa-itunes-note"></i>
                 </a>
-                <a class="icon" href="">
+				<a class="icon" href="{{ .Site.Params.stitcher_podcast_url }}">
                     <i class="fa fa-podcast"></i>
                 </a>
-                <a class="icon" href="https://github.com/jessfraz/weirdtrickmafia.fm">
+				<a class="icon" href="{{ .Site.Params.github_url }}">
                     <i class="fab fa-github"></i>
                 </a>
-                <a class="icon" href="https://twitter.com/weirdtrickmafia">
+				<a class="icon" href="https://twitter.com/{{ .Site.Params.twitter_handle }}">
                     <i class="fab fa-twitter"></i>
                 </a>
-                <a class="icon" href="https://weirdtrickmafia.fm/post/index.xml">
+				<a class="icon" href="/post/index.xml">
                     <i class="fa fa-rss"></i>
                 </a>
             </div>
