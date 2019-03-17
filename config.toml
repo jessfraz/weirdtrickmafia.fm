@@ -4,4 +4,15 @@ title = "weirdtrickmafia.fm"
 canonifyUrls = true
 
 [params]
-	description = "A podcast about tech, feelings, open source, and /dev/urandom."
+description = "A podcast about tech, feelings, open source, and /dev/urandom."
+	[params.feed]
+	feed_copyright = "Copyright 2019 weirdtrickmafia.fm" #do not use markdown in this field; it is used in the feed
+	itunes_subtitle = "/dev/urandom" #no markdown or HTML
+	itunes_author = "Jessie Frazelle and Andrew Clay Shafer" #no markdown or HTML
+	itunes_summary = "A podcast about tech, feelings, open source, and /dev/urandom."
+	itunes_owner_name = "Jessie Frazelle"
+	itunes_owner_email = "jfrazelle@me.com" #contains the e-mail address that will be used to contact the owner of the Podcast for communication specifically about their Podcast on iTunes. It will not be publicly displayed on iTunes.
+	itunes_image = "https://weirdtrickmafia.fm/img/logo.png" #fqdn to the image art for your podcast
+	itunes_top_category = "Technology"
+	itunes_first_sub_category = "Software How-To"
+	itunes_second_sub_category = "Tech News"
