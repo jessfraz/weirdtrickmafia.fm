@@ -10,6 +10,7 @@ google_play_podcast_url = ""
 stitcher_podcast_url = ""
 github_url = "https://github.com/jessfraz/weirdtrickmafia.fm"
 twitter_handle = "weirdtrickmafia"
+youtube_url = "https://www.youtube.com/channel/UC5mxyAYNjOR1dqXeyzxW_uw"
 	[params.feed]
 	feed_copyright = "Copyright 2019 weirdtrickmafia.fm" #do not use markdown in this field; it is used in the feed
 	itunes_subtitle = "/dev/urandom" #no markdown or HTML
