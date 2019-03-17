@@ -30,3 +30,7 @@ a.icon:hover,
 a.icon:focus {
   text-decoration: none;
 }
+
+.lead .btn {
+    margin-bottom: 10px;
+}

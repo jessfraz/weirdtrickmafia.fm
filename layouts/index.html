@@ -1,6 +1,26 @@
 {{ partial "header.html" . }}
 
 <div class="container">
+    <p class="lead">
+        <a class="btn btn-default btn-sm" role="button" href="">
+            <i class="fab fa-google-play"></i> Google Play
+        </a>
+        <a class="btn btn-default btn-sm" role="button" href="">
+            <i class="fab fa-itunes-note"></i> iTunes
+        </a>
+        <a class="btn btn-default btn-sm" role="button" href="">
+            <i class="fa fa-podcast"></i> Stitcher
+        </a>
+        <a class="btn btn-default btn-sm" role="button" href="https://github.com/jessfraz/weirdtrickmafia.fm">
+            <i class="fab fa-github"></i> Make a Pull Request
+        </a>
+        <a class="btn btn-default btn-sm" role="button" href="https://twitter.com/weirdtrickmafia">
+            <i class="fab fa-twitter"></i> Follow
+        </a>
+        <a class="btn btn-default btn-sm" role="button" href="https://weirdtrickmafia.fm/post/index.xml">
+            <i class="fa fa-rss"></i> RSS Feed
+        </a>
+    </p>
     {{ range .Data.Pages.ByDate.Reverse }}
     <article>
         <h2>
