@@ -28,12 +28,10 @@
     {{- end -}}
 
     {{- with .Params.youtube -}}
-    <article class = "youtube row">
-        <div class="col">
+    <article class = "youtube">
             <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item" src="//www.youtube.com/embed/{{ . }}" allowfullscreen></iframe>
             </div>
-        </div>
     </article>
     {{- end -}}
 
