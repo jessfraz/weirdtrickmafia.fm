@@ -11,26 +11,34 @@
 }
 
 h1 a {
- color:#333;
+    color:#333;
 }
 
 h1 a:hover,
 h1 a:focus {
-  color: #444;
-  text-decoration: none;
+    color: #444;
+    text-decoration: none;
 }
 
 h2 a:hover,
 h2 a:focus {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 a.icon,
 a.icon:hover,
 a.icon:focus {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .lead .btn {
     margin-bottom: 10px;
+}
+
+.embed-responsive {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
 }
