@@ -28,9 +28,11 @@
     {{- end -}}
 
     {{- with .Params.youtube -}}
-    <article class = "youtube">
+    <article class = "youtub row">
+        <div class="col">
         <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" width="100%" src="//www.youtube.com/embed/{{ . }}" allowfullscreen></iframe>
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/{{ . }}" allowfullscreen></iframe>
+        </div>
         </div>
     </article>
     {{- end -}}
