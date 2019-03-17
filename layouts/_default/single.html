@@ -46,22 +46,22 @@
                 <h4>{{ ( index $.Site.Data.hosts $name).fullname }}</h4>
                 {{- with ( index $.Site.Data.hosts $name ).site -}}
                 <a class="icon" href="{{ . }}">
-                    <i class="fas fa-home fa-2x"></i>
+                    <i class="fas fa-home"></i>
                 </a>
                 {{- end -}}
                 {{- with ( index $.Site.Data.hosts $name).twitter -}}
                 <a class="icon" href="https://twitter.com/{{ . }}">
-                    <i class="fab fa-twitter-square fa-2x"></i>
+                    <i class="fab fa-twitter-square"></i>
                 </a>
                 {{- end -}}
                 {{- with ( index $.Site.Data.hosts $name).github -}}
                 <a class="icon" href="https://github.com/{{ . }}">
-                    <i class="fab fa-github-square fa-2x"></i>
+                    <i class="fab fa-github-square"></i>
                 </a>
                 {{- end -}}
                 {{- with ( index $.Site.Data.hosts $name).linkedin -}}
                 <a class="icon" href="https://www.linkedin.com/in/{{ . }}">
-                    <i class="fab fa-linkedin fa-2x"></i>
+                    <i class="fab fa-linkedin"></i>
                 </a>
                 {{- end -}}
             </div>
