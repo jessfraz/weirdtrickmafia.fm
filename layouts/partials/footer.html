@@ -1,25 +1,30 @@
 
-    <footer class="footer">
-        <div class="container">
-            <p class="text-muted"><small>&copy; weirdtrickmafia.fm {{ .Now.Format "2006" }}
-                <div class="pull-right">
-                    <a href="https://github.com/jessfraz/weirdtrickmafia.fm" target="_blank">github.com/jessfraz/weirdtrickmafia.fm</a>
-                    &nbsp; &nbsp;
-                    <a href="https://twitter.com/weirdtrickmafia" target="_blank">@weirdtrickmafia</a></small>
-                </div>
-            </p>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <p class="text-muted"><small>&copy; weirdtrickmafia.fm {{ now.Format "2006" }}</p>
+            </div>
+            <div class="col-md-7">
+                <p class="text-right">
+                <a href="https://github.com/jessfraz/weirdtrickmafia.fm" target="_blank">github.com/jessfraz/weirdtrickmafia.fm</a>
+                &nbsp;
+                <a href="https://twitter.com/weirdtrickmafia" target="_blank">@weirdtrickmafia</a></small>
+                </p>
+            </div>
         </div>
-	</footer>
+    </div>
+</footer>
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-29404280-22"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-29404280-22"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
 
-	  gtag('config', 'UA-29404280-22');
-	</script>
+gtag('config', 'UA-29404280-22');
+</script>
 
 </body>
 </html>

@@ -1,12 +1,74 @@
 {{ partial "header.html" . }}
 
 <div class="container single">
-	<div class="page-header">
+    <div class="page-header">
+        <h5>Episode {{ .Params.episode }}</h5>
         <h2>{{.Title}} <small>{{ .Date.Format "2006/01/02" }}</small></h2>
-	</div>
-	<article>
-		{{ .Content }}
-	</article>
+    </div>
+    <article class="show-notes">
+        {{ .Content }}
+    </article>
+
+
+    {{- with .Params.podcast_file -}}
+    <article class="podcast-file">
+        <div>
+            <audio src="/audio/{{ . }}" preload="auto"/>
+
+                <script src="/js/audio.min.js"></script>
+                <script>
+                    audiojs.events.ready(function() {
+                        var as = audiojs.createAll();
+                    });
+                </script>
+        </div>
+        <div>
+            <h4><a href="/audio/{{ . }}">Direct Download</a></h4>
+        </div>
+    </article>
+    {{- end -}}
+
+    {{- with .Params.youtube -}}
+    <article class = "youtube">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/{{ . }}" allowfullscreen></iframe>
+        </div>
+    </article>
+    {{- end -}}
+
+    {{ with .Params.hosts }}
+    <article class="hosts">
+        <h2>Hosts</h2>
+
+        {{ range $name := . }}
+        <div class="row person">
+            <div class="col-md-8">
+                <h4>{{ ( index $.Site.Data.hosts $name).fullname }}</h4>
+                {{- with ( index $.Site.Data.hosts $name ).site -}}
+                <a class="icon" href="{{ . }}">
+                    <i class="fas fa-home fa-2x"></i>
+                </a>
+                {{- end -}}
+                {{- with ( index $.Site.Data.hosts $name).twitter -}}
+                <a class="icon" href="https://twitter.com/{{ . }}">
+                    <i class="fab fa-twitter-square fa-2x"></i>
+                </a>
+                {{- end -}}
+                {{- with ( index $.Site.Data.hosts $name).github -}}
+                <a class="icon" href="https://github.com/{{ . }}">
+                    <i class="fab fa-github-square fa-2x"></i>
+                </a>
+                {{- end -}}
+                {{- with ( index $.Site.Data.hosts $name).linkedin -}}
+                <a class="icon" href="https://www.linkedin.com/in/{{ . }}">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                {{- end -}}
+            </div>
+        </div>
+        {{ end }}
+    </article>
+    {{ end }}
 </div>
 
 {{ partial "footer.html" . }}
