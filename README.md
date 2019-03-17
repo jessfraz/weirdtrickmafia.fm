@@ -28,6 +28,16 @@ Foundation.
 The `hosts` line above must line up with files in the [`data/hosts`](data/hosts) directory.
 If there is a new host, they will need a new file in this directory.
 
+Here is an example toml file:
+
+```toml
+name = "jessfraz"
+fullname = "Jessie Frazelle"
+twitter = "jessfraz"
+github = "jessfraz"
+site = "https://jess.dev"
+```
+
 ### Audio Files
 
 The `podcast_file` line above must correspond to the file in the [`static/audio`](static/audio) directory.
