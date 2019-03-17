@@ -57,7 +57,7 @@
             <link>{{ .Permalink }}</link>
             <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }} </pubDate>
             <dc:creator>{{ .Site.Params.itunes_author }}</dc:creator>
-            <guid>{{ .Site.Params.media_prefix }}{{ .Params.podcast_file }}</guid>
+            <guid>{{ .Site.BaseURL }}/audio/{{ .Params.podcast_file }}</guid>
             <itunes:author>
                 {{- if isset .Params "hosts" -}}
                 {{ $hosts := (.Params.hosts) }}
@@ -92,7 +92,7 @@
             <itunes:image href="{{ . | absURL }}"></itunes:image>
             <googleplay:image href="{{ . | absURL }}"></googleplay:image>
             {{- end -}}
-            <enclosure url="{{ .Site.Params.media_prefix }}{{ .Params.podcast_file }}" {{with .Params.podcast_bytes}}length="{{ . }}"{{ end }} type="audio/mpeg" />
+            <enclosure url="{{ .Site.BaseURL }}/audio/{{ .Params.podcast_file }}" {{with .Params.podcast_bytes}}length="{{ . }}"{{ end }} type="audio/mpeg" />
             {{- with .Params.podcast_duration -}}<itunes:duration>{{ . }}</itunes:duration>{{- end -}}
             {{- with .Params.explicit -}}
             <itunes:explicit>{{ . }}</itunes:explicit>
