@@ -5,6 +5,7 @@
 <meta name="twitter:creator" content="@{{ .Site.Params.twitter_handle }}">
 <meta name="twitter:title" content="{{ .Site.Title }}: {{ if eq .Section "post" }}{{ .Title }}{{ else }}Home{{ end }}">
 <meta name="twitter:description" content="{{ if eq .Section "post" }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta name="twitter:image" content="{{.Site.BaseURL}}/img/podcast_logo.png">
 <meta name="twitter:domain" content="weirdtrickmafia.fm">
 
 <!-- facebook open graph tags -->
