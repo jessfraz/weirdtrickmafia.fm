@@ -1,4 +1,4 @@
-baseurl = "https://weirdtrickmafia.fm/"
+baseurl = "https://weirdtrickmafia.fm"
 languageCode = "en-us"
 title = "weirdtrickmafia.fm"
 canonifyUrls = true
