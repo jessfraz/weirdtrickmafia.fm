@@ -10,3 +10,5 @@ episode = 1
 +++
 
 Andrew and Jess discuss open source foundations.
+
+Note from Jess: If you want to support open source projects checkout [open collective](https://opencollective.com), [outreachy](https://www.outreachy.org/), and the [software conservancy](https://sfconservancy.org/).
