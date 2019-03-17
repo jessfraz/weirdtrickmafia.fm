@@ -4,7 +4,7 @@ Source code for [weirdtrickmafia.fm](https://weirdtrickmafia.fm).
 
 ## Adding a new episode
 
-Create a new md file in `content/post` with the name of the episode.
+Create a new md file in [`content/post`](content/post) with the name of the episode.
 
 It should have contents that look like the following:
 
@@ -17,9 +17,17 @@ podcast_file = "foundation-head.mp3"
 hosts = ["littleidea", "jessfraz"]
 explicit = "yes" # values are "yes" or "no"
 youtube = "bNfAAQUQ_54"
-draft = true
 +++
 
 Andrew and Jess discuss open source foundations, specifically the Linux
 Foundation.
 ```
+
+### Hosts
+
+The `hosts` line above must line up with files in the [`data/hosts`](data/hosts) directory.
+If there is a new host, they will need a new file in this directory.
+
+### Audio Files
+
+The `podcast_file` line above must correspond to the file in the [`static/audio`](static/audio) directory.
