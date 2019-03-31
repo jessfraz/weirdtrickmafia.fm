@@ -5,9 +5,9 @@ canonifyUrls = true
 
 [params]
 description = "A podcast about tech, feelings, open source, and /dev/urandom."
-#itunes_podcast_url = ""
-#google_play_podcast_url = ""
-#stitcher_podcast_url = ""
+itunes_podcast_url = "https://itunes.apple.com/us/podcast/weirdtrickmafia-fm/id1456548333?mt=2"
+google_play_podcast_url = "https://playmusic.app.goo.gl/?ibi=com.google.PlayMusic&isi=691797987&ius=googleplaymusic&apn=com.google.android.music&link=https://play.google.com/music/m/Ithpij5edvyliymmbmg3d6ofyiy?t%3Dweirdtrickmafia.fm%26pcampaignid%3DMKT-na-all-co-pr-mu-pod-16"
+stitcher_podcast_url = "https://www.stitcher.com/s?fid=383697&refid=stpr"
 github_url = "https://github.com/jessfraz/weirdtrickmafia.fm"
 twitter_handle = "weirdtrickmafia"
 youtube_url = "https://www.youtube.com/channel/UC5mxyAYNjOR1dqXeyzxW_uw"
