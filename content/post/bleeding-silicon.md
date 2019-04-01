@@ -1,5 +1,5 @@
 +++
-date = 2019-04-02T09:59:40-05:00
+date = 2019-04-01T00:59:40-05:00
 title = "Bleeding Silicon"
 description = "Andrew Clay Shafer and Jess Frazelle discuss Elizabeth Holmes and Theranos."
 podcast_file = "bleeding_silicon.mp3"
