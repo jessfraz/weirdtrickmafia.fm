@@ -4,6 +4,7 @@ title = "Resourceful & Persistent"
 description = "Verónica López (@maria_fibonacci) shares her software engineering journey from physics and mobile projects in Mexico to Cloud Native Kubernetes in Silicon Valley with Andrew and Jess."
 podcast_file = "resourceful_and_persistent.mp3"
 hosts = ["littleidea", "jessfraz"]
+guests = ["maria_fibonacci"]
 explicit = "yes" # values are "yes" or "no"
 youtube = "L19jI9kdncQ"
 episode = 4

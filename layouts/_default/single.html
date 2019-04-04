@@ -68,6 +68,40 @@
         {{ end }}
     </article>
     {{ end }}
+
+    {{ with .Params.guests }}
+    <article class="guests">
+        <h3>Guests</h3>
+
+        {{ range $name := . }}
+        <div class="row person">
+            <div class="col-md-8">
+                <h4>{{ ( index $.Site.Data.guests $name).fullname }}</h4>
+                {{- with ( index $.Site.Data.guests $name ).site -}}
+                <a class="icon" href="{{ . }}">
+                    <i class="fas fa-home"></i>
+                </a>
+                {{- end -}}
+                {{- with ( index $.Site.Data.guests $name).twitter -}}
+                <a class="icon" href="https://twitter.com/{{ . }}">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+                {{- end -}}
+                {{- with ( index $.Site.Data.guests $name).github -}}
+                <a class="icon" href="https://github.com/{{ . }}">
+                    <i class="fab fa-github-square"></i>
+                </a>
+                {{- end -}}
+                {{- with ( index $.Site.Data.guests $name).linkedin -}}
+                <a class="icon" href="https://www.linkedin.com/in/{{ . }}">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                {{- end -}}
+            </div>
+        </div>
+        {{ end }}
+    </article>
+    {{ end }}
 </div>
 
 {{ partial "footer.html" . }}
