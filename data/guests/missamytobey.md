@@ -1,5 +1,0 @@
-name = "missamytobey"
-fullname = "Amy Tobey"
-twitter = "missamytobey"
-github = "tobert"
-site = "http://tobert.org/"
