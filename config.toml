@@ -2,6 +2,7 @@ baseurl = "https://weirdtrickmafia.fm"
 languageCode = "en-us"
 title = "weirdtrickmafia.fm"
 canonifyUrls = true
+disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params]
 description = "A podcast about tech, feelings, open source, and /dev/urandom."
