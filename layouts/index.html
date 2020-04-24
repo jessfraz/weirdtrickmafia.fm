@@ -27,7 +27,7 @@
         <i class="fa fa-rss"></i> RSS Feed
     </a>
     </p>
-    {{ range .Data.Pages.ByDate.Reverse }}
+    {{ range .Site.Pages.ByDate.Reverse }}
     <article>
         <h2>
             <a href="{{ .Permalink }}" title="{{ .Title }}">
